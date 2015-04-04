@@ -1,0 +1,29 @@
+{
+  "name": "videotitan-server",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael A Tomcal <michael@twoeyetech.com> (https://github.com/mtomcal)",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^5.0.8",
+    "babel-runtime": "^5.0.8",
+    "hapi": "^8.4.0",
+    "hapi-swagger": "^0.7.1",
+    "joi": "^6.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.10.0",
+    "gulp-nodemon": "^2.0.2",
+    "gulp-streamify": "0.0.5",
+    "gulp-watch": "^4.2.3",
+    "jshint": "^2.6.3",
+    "jshint-stylish": "^1.0.1",
+    "lazypipe": "^0.2.2",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

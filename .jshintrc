@@ -1,0 +1,7 @@
+{
+  laxbreak: true,
+  laxcomma: true,
+  esnext: true,
+  eqnull: true,
+  node: true
+}
