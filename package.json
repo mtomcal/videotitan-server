@@ -11,10 +11,12 @@
   "dependencies": {
     "babel": "^5.0.8",
     "babel-runtime": "^5.0.8",
+    "bluebird": "^2.9.25",
     "boom": "^2.7.0",
     "hapi": "^8.4.0",
     "hapi-swagger": "^0.7.1",
-    "joi": "^6.1.0"
+    "joi": "^6.1.0",
+    "youtube-api": "^0.3.2"
   },
   "devDependencies": {
     "gulp": "^3.8.11",

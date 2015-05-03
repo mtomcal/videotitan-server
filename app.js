@@ -1,6 +1,8 @@
 import Hapi from 'hapi';
 import Joi from 'joi';
 import Boom from 'boom';
+import config from './config/default';
+import YoutubeImport from './lib/youtube_import';
 
 const server = new Hapi.Server();
 
@@ -26,7 +28,8 @@ server.route({
     tags: ['api', 'import'],
     description: 'Import playlists for user',
     handler(request, reply) {
-
+      YoutubeImport(request.params.username, config);
+      reply({success: true, result: request.params.username});
     },
     validate: {
       params: {
