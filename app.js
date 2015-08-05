@@ -103,6 +103,7 @@ server.route({
         })
         .caught((err) => {
           reply({success: false, result: err.message});
+          throw err;
         });
     },
     validate: {
