@@ -4,11 +4,11 @@ import Boom from 'boom';
 import config from './config/default';
 import YoutubeImport from './lib/youtube_import';
 import DB from './lib/db';
-import Promise from 'Bluebird';
+import Promise from 'bluebird';
 
 const server = new Hapi.Server();
 
-server.connection({ port: 3000 });
+server.connection({port: process.env.PORT || 3000 });
 
 server.register({
   register: require('hapi-swagger'),
